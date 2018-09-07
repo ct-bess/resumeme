@@ -1,0 +1,124 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{0.989\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large James Aubin}  & 281-871-9578\\
+9422 Walnut Brook Court &  jaubin9422@gmail.com \\
+Houston, TX 77040 & jaubin9422@tamu.edu\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Objective}
+\begin{description}
+\item Seeking full-time work which will provide relevant career experience.
+\end{description}
+
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Texas A\&M University}{College Station, TX}{Bachelor of Science in Computer Engineering}{Sep. 2014 - Dec. 2018}
+	\begin{itemize}
+		\resitem{GPA: 3.38}
+		\resitem{134 hours}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Boxer Property}{Houston, TX}{Software Development Intern}{June 2016 - August 2016 / June 2017 / June 2018}
+	\begin{itemize}
+		\resitem{Developed custom Amazon Alexa skill to automate tenant requests using speech-recognition}
+		\resitem{Designed and implemented Raspberry Pi project to demonstrate company proof-of-concept}
+		\resitem{Soldering and assembly of basic ICs}
+		\resitem{Adapted custom hardware to existing company software}
+	\end{itemize}
+	\ressubheading{Boxer Property}{Houston, TX}{General Office Assistant}{June 2012 - August 2015}
+	\begin{itemize}
+		\resitem{Assistance with coordination of various projects within Accounts Payable/Treasury}
+		\resitem{Mediated financial disputes with former tenants via phone/email correspondence}
+		\resitem{Managed tenant refund checks}
+		
+	\end{itemize}
+\item
+	\ressubheading{Go! Calendars}{Houston, TX}{Retail}{August 2013 - December 2013}
+	\begin{itemize}
+		\resitem{Supervised kiosk inventory and register balance}
+		\resitem{Interaction with customers in a fast-paced retail environment}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Skills}
+\begin{itemize}
+\item \textbf{Leadership:} Eagle Scout (BSA)
+\begin{itemize}
+\item Managed and constructed squirrel-rehabilitation cage for Texas Wildlife Rehabilitation Center
+\item Raised funds to cover material costs and labor
+\end{itemize}
+
+\item \textbf{Programming:} Proficient in C/C++/C\#, Java
+\item \textbf{Electronics:} Experience with design and assembly of basic circuits (soldering and wiring)
+\end{itemize}
+
+
+\resheading{Projects}
+\begin{itemize}
+
+\item Space Invaders Emulator (C++)
+\begin{itemize}
+\item Implemented Intel 8080 CPU instructions to emulate an arcade game
+\item Emulated arcade hardware (display, coin input, sounds) using SDL multimedia library
+ 
+\end{itemize}
+
+\item Snake AI (C++)
+\begin{itemize}
+\item Used several path-finding algorithms (A*, breadth-first search, greedy best-first) to play Snake
+\item Program logged statistics (path length, time taken) about each algorithm for comparison purposes
+\end{itemize}
+
+\end{itemize}
+
+\pagebreak
+
+\end{document}
